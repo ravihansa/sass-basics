@@ -1,0 +1,13 @@
+header {
+    background: grey;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: $headColour;
+
+    button{
+        background: $submitBtn;
+        padding: 14px 20px;
+        margin: 10px 10px 10px;
+    }
+}
