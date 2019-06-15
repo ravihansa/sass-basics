@@ -6,3 +6,14 @@ Sass is a stylesheet language that’s compiled to CSS. It allows you to use var
 <br>
 In this application, I tried to give basic idea about Sass, Creating simple Stacked Form.
 &nbsp;
+
+## What is included in this application?
+
+- Variables
+- Nesting
+- Partials/Import
+- Mixins
+- Extend/Inheritance
+- Operators
+
+&nbsp;

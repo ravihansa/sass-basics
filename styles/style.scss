@@ -1,34 +1,48 @@
-@import "./variables";
 @import "./header";
 @import "./footer";
+@import "./variables";
+@import "./properties";
 
 .content {
-    margin-top: 100px;    
-    display: flex;
-    justify-content: center;
+    @include flexCenter();
+    margin-top: 100px + 10px;
     width: 100%;
     
-    select, input[type=text] {
+    input {
+        @include border(solid, #ccc, 6px);
+        @include font(15px, italic, normal);
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 6px;
         box-sizing: border-box;
     }
 
+    select {
+        @extend input;
+        @include font(16px, normal, bold);
+    }
+
     button {
+        @include border(outset, lightgreen, 6px);
+        @include font(15px, normal, normal);
         width: 100%;
         background-color: $submitBtn;
         color: $txtColour;
         padding: 14px 20px;
         margin: 8px 0;
-        border: none;
-        border-radius: 6px;
         cursor: pointer;
-        &:hover{
+        &:hover {
             background-color: #45a049;
+        }
+    }
+
+    label {
+        @include font(20px, italic, bold);
+        color: $lblColour;
+        padding: 8px;
+        &::after {
+            content: " :- ";
         }
     }
 

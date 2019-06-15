@@ -1,0 +1,19 @@
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin border($style, $color, $radius) {    
+    border-width: 2px;
+    border-style: $style;
+    border-color: $color;    
+    border-radius: $radius;  
+}
+
+@mixin font($size, $style, $weight) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;    
+}

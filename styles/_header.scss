@@ -1,13 +1,28 @@
+@import "./variables";
+@import "./properties";
+
 header {
-    background: grey;
-    height: 60px;
-    display: flex;
-    justify-content: center;
+    @include flexCenter();
+
+    background: DodgerBlue;
+    height: 60px;    
     color: $headColour;
 
-    button{
-        background: $submitBtn;
-        padding: 14px 20px;
-        margin: 10px 10px 10px;
+    h2 {
+        font-size: 30px;
+        &:hover {
+            color: blue;
+        }
     }
+
+    button {
+        @include border(solid, #ccc, 18px);
+        background: grey;
+        padding: 8px 18px;
+        margin: 10px 10px 10px 10px;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
 }
